@@ -25,8 +25,8 @@ function resize(){
 }
 
 function draw() {
-  background(0);
   resize();
+  background(0);
   for(let star of stars){
     star.update();
     star.display();
