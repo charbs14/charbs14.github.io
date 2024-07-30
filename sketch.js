@@ -1,6 +1,9 @@
 let stars = [];
+var canvas; 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index', '-1');
   frameRate(60);
   noStroke();
   let stars_amount = int((windowWidth*windowHeight) * (80/(600 ** 2)))
