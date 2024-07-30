@@ -22,8 +22,8 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight); // Resize canvas when window size changes
-  width = windowWidth;
-  height = windowHeight;
+  canvas.width = windowWidth;
+  canvas.height = windowHeight;
   stars_amount = int((windowWidth * windowHeight) * (80 / (600 ** 2)));
   stars = []; // Clear existing stars
   for (let i = 0; i < stars_amount; i++) {
