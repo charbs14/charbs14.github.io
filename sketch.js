@@ -10,7 +10,6 @@ function setup() {
 }
 
 function draw() {
-  resize();
   background(0);
   for(let star of stars){
     star.update();
