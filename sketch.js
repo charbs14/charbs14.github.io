@@ -1,6 +1,7 @@
 let stars = [];
 var canvas; 
 function setup() {
+  pixelDensity(1);
   canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   canvas.position(0,0);
   canvas.style('z-index', '-1');
