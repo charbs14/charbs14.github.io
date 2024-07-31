@@ -6,7 +6,7 @@ class Star{
   }
   
   update(){
-    this.yPos = this.yPos + int((windowHeight * ((1/100)));
+    this.yPos = this.yPos + int((windowHeight * (1/100)));
     if(this.yPos > windowHeight){
       this.yPos = 0;
       this.xPos = int(random(windowWidth));
