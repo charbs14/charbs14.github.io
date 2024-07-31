@@ -1,4 +1,4 @@
-det stars = [];
+let stars = [];
 var canvas; 
 function setup() {
   pixelDensity(1);
