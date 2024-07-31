@@ -1,7 +1,7 @@
 let stars = [];
 var canvas; 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   canvas.position(0,0);
   canvas.style('z-index', '-1');
   frameRate(60);
@@ -13,6 +13,7 @@ function setup() {
 }
 
 function draw() {
+  translate(-width/2, -height/2);
   background(0);
   for(let star of stars){
     star.update();
