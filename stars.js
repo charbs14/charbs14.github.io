@@ -1,7 +1,7 @@
 class Star{
   constructor(){
-    this.xPos = int(random(599));
-    this.yPos = int(random(599));
+    this.xPos = int(random(windowWidth));
+    this.yPos = int(random(windowHeight));
     this.rand = color(int(random(254)), int(random(254)),int(random(254)),255);
   }
   
@@ -9,7 +9,7 @@ class Star{
     this.yPos = this.yPos + 4;
     if(this.yPos > windowHeight){
       this.yPos = 0;
-      this.xPos = int(random(599));
+      this.xPos = int(random(windowWidth));
       this.rand = color(int(random(254)), int(random(254)),int(random(254)), 255);
     }
   }
