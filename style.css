@@ -30,7 +30,8 @@ html, body {
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	width: 60%;
 	max-width: 800px;
-	animation: fadeIn 3s ease-out forwards;
+	animation: fadeIn 2s ease-out forwards;
+	animation-delay: 2s;
 }
 .profile-picture{
 	border-radius: 20%;
